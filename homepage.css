@@ -1,0 +1,482 @@
+@charset "UTF-8";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: #333;
+	font-size: 1.2rem;
+	font-family: "Hirakino Kaku Gothic Pron", Meiryo, sans-serif;
+	text-align: center;
+	background: fixed;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #d03c56;
+	text-decoration: none;
+}
+
+header .wrapper footer {
+	width: 100%;
+}
+
+.clearfix {
+	content: "";
+	display: block
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+.name {
+	height: 820px;
+	padding-top: 240px;
+	text-align: center;
+	background-color: white;
+	background-size: cover;
+}
+
+.name h1 {
+	font-size: 120px;
+	font-family: "Montserrat Subrayada", sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	color: black;
+	display: inline-block;
+}
+
+.yoshimi {
+	font-size: 50px;
+	letter-spacing: 1px
+}
+
+.miryoku {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #483d8b;
+}
+
+.container-pro {
+	width: 100%;
+	padding: 100px 50px;
+	background-color: #2d3d54;
+}
+
+.inner-container {
+	
+}
+
+.about-img {
+	float: left;
+	width: 50%;
+}
+
+.blackman {
+	display: inline-block;
+	width: 600px;
+ 	border-radius: 50%;
+}
+
+.about-txt {
+	float: right;
+	width: 50%;
+	padding-left: 30px;
+	text-align: left;
+}
+
+.about-txt h4 {
+	font-size: 50px;
+	font-family: "Alegreya Sans SC", sans-serif;
+	color: white;
+}
+
+.about-txt p {
+	font-size: 20px;
+	color: white;
+
+}
+
+.container-skill {
+	padding: 50px;
+	background-color: rgba(21, 21, 21, 0.8);
+
+}
+
+.container-skill h4 {
+	width: 100%;
+	padding-bottom: 30px;
+	font-size: 50px;
+	font-family: "Alegreya Sans SC", sans-serif;
+	color: white;
+}
+
+.skill-inner {
+	padding: 0 50px;
+	
+}
+
+.skill__img {
+    width: 150px;
+    height: 150px;
+    
+}
+
+.skill__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.skill__name {
+	font-size: 20px;
+	color: white;
+
+}
+
+.container-robo {
+	padding: 50px 50px;
+}
+
+.container-robo h4 {
+	padding-bottom: 30px;
+	font-size: 50px;
+	font-family: "Alegreya Sans SC", sans-serif;
+	color: black;
+}
+
+.inner-robo {
+	padding: 30px 100px;
+	color: black;
+}
+
+.robocuph {
+	position: relative;
+	margin-bottom: 30px;
+	display: block; 
+	padding: 20px 0;
+	font-size: 40px;
+	color: black;
+}
+
+.robocuph::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;/*線の上下位置*/
+  display: inline-block;
+  width: 60px;/*線の長さ*/
+  height: 3px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: black;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+
+.inner-robo p {
+	display: block;
+	padding: 50px 200px;
+	font-size: 15px;
+
+}
+
+.members {
+	padding: 30px 0 ;
+	background-color: rgba(21, 21, 21, 0.8);
+}
+
+.members h1 {
+	font-size: 50px;
+	font-family: "Alegreya Sans SC", sans-serif;
+	text-align: center;
+	color: white;
+	padding: 20px 0;
+}
+
+.members li {
+	display: block;
+	width: 33.3%;
+	float: left;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.members h2 {
+	font-size: 25px;
+	color: #f05f40;
+	margin: 10px 0;
+}
+
+.members p {
+	font-size: 15px;
+	color: white;
+	padding: 5px;
+}
+
+footer {
+	height: 600px;
+	background-color: white;
+}
+
+footer h2 {
+	font-size: 50px;
+	font-family: "Alegreya Sans SC", sans-serif;
+	text-align: center; 
+	color: black;
+	margin: 10px 0;
+}
+
+.footer-left {
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+
+.icon h3 {
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+.btn {
+	margin: 20px 0 5px 0;
+}
+
+.twitter-btn {
+	color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  position: relative;
+  display: inline-block;
+  height: 50px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 23px;/*文字のサイズ*/
+  line-height: 50px;
+  background-color: #55acee;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.twitter-btn .fa-twitter {
+	font-size: 35px;
+	position: relative;
+	top: 4px;
+}
+
+.fa-twitter {
+	left: -15px;
+}
+
+.twitter-btn span {
+	display: inline-block;
+	position: relative;
+	transition: .5s;
+}
+
+.twitter-btn span:hover {
+	-webkit-transform: rotateX(360deg);
+  	-ms-transform: rotateX(360deg);
+  	transform: rotateX(360deg);
+}
+
+
+.insta_btn2{/*ボタンの下地*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  position: relative;
+  display: inline-block;
+  height: 50px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 23px;/*文字のサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+#btn {
+	color: white;
+}
+
+.insta_btn2:before{/*グラデーション②*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;/*全体を覆う*/
+  height: 100%;/*全体を覆う*/
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.insta_btn2 .fa-instagram{/*アイコン*/
+  font-size: 35px;/*アイコンサイズ*/
+  position: relative;
+  top: 4px;/*アイコン位置の微調整*/
+}
+
+.insta_btn2 span {/*テキスト*/
+  display:inline-block;
+  position: relative;
+  transition: .5s
+}
+
+.insta_btn2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.kut {
+	transition: 0.3s;
+	opacity: 1.0;
+	display: inline-block;
+}
+
+.kut:hover {
+	opacity: 0.8;
+}
+
+.kut h3 {
+	font-size: 30px;
+	margin: 40px 0;
+}
+
+.kut-pg {
+	border-radius: 50%;
+}
+
+.kut p {
+	color: black;
+}
+
+.footer-right {
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+
+.footer-right h3 {
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+.youtube {
+	width: 560px;
+	height: 315px;
+}
+
+@media (width: 768px) {
+	.name {
+		padding-top: 100px;
+	}
+
+	.yoshimi {
+		font-size: 30px;
+	}
+	.blackman {
+		width: 300px
+	}
+
+	.youtube {
+		width: 400px;
+		height: 250px;
+	}
+
+	.skill__img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.inner-robo p {
+		padding: 30px 50px ;
+	}
+
+	.footer-left {
+		width: 100%;
+	}
+
+	.footer-right {
+		width: 100%;
+	}
+
+}
+
+@media (width: 375px) {
+	.name h1 {
+		font-size: 50px;
+	}
+
+	.name {
+		padding-top: 50px;
+		height: 400px;
+	}
+
+	.yoshimi {
+		font-size: 20px;
+	}
+
+	.about-img {
+		width: 100%;
+	}
+
+	.blackman {
+		width: 200px;
+	}
+
+	.about-txt {
+		width: 100%;
+	}
+
+	.about-txt h4 {
+		text-align: center;
+	}
+
+	.about-txt p {
+		font-size: 10px;
+	}
+
+	.youtube {
+		width: 200px;
+		height: 150px;
+	}
+
+	.skill__img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.inner-robo {
+		padding: 10px;
+	}
+
+	.inner-robo h5 {
+		font-size: 30px
+	}
+
+	.inner-robo p {
+		padding: 30px 10px ;
+		font-size: 10px
+	}
+
+	.footer-left {
+		width: 100%;
+	}
+
+	.footer-right {
+		width: 100%;
+	}
+	
+	.googlemap {
+		width: 300px;
+		height: 300px;
+	}
+
+}
