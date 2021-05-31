@@ -2,6 +2,7 @@
 
 html {
 	font-size: 62.5%;
+	height: 100%;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
 	font-family: "Hirakino Kaku Gothic Pron", Meiryo, sans-serif;
 	text-align: center;
 	background: fixed;
+	height: 100%;
 }
 
 *, *::before, *::after {
@@ -23,6 +25,11 @@ a:link, a:visited, a:hover, a:active {
 
 header .wrapper footer {
 	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	height: 100%;
 }
 
 .clearfix {
@@ -36,8 +43,8 @@ header .wrapper footer {
 }
 
 .name {
-	height: 820px;
-	padding-top: 240px;
+	height: 100%;
+	padding-top: 20%;
 	text-align: center;
 	background-color: white;
 	background-size: cover;
@@ -181,7 +188,31 @@ header .wrapper footer {
 
 .inner-robo p {
 	display: block;
-	padding: 50px 200px;
+	padding: 50px 20%;
+	text-align: left;
+	font-size: 15px;
+
+}
+
+.inner-robo img {
+	width: 45%;
+	height: 100%;
+
+}
+
+.container-act {
+	background-color: #2d3d54;
+	padding-bottom: 100px;
+}
+
+#act-h4 {
+	color: white;
+}
+
+.act-content {
+	padding-left: 35%;
+	text-align: left;
+	color: white;
 	font-size: 15px;
 
 }
@@ -204,7 +235,8 @@ header .wrapper footer {
 	width: 33.3%;
 	float: left;
 	text-align: center;
-	margin: 30px 0;
+	margin: 40px 0;
+	padding-top: 20px;
 }
 
 .members h2 {
@@ -217,6 +249,22 @@ header .wrapper footer {
 	font-size: 15px;
 	color: white;
 	padding: 5px;
+}
+
+.members a {
+	display: inline-block;
+	color: white;
+}
+
+.members a ,
+.members a::before,
+.members a::after {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.members a:hover {
+	color: #f05f40;
 }
 
 footer {
@@ -375,7 +423,7 @@ footer h2 {
 
 @media (width: 768px) {
 	.name {
-		padding-top: 100px;
+		padding-top: 200px;
 	}
 
 	.yoshimi {
@@ -395,8 +443,20 @@ footer h2 {
 		height: 100px;
 	}
 
+	.inner-robo {
+		padding: 20px;
+	}
+
 	.inner-robo p {
-		padding: 30px 50px ;
+		padding: 30px 30px ;
+	}
+
+	.inner-robo img {
+		width: 60%;
+	}
+
+	.act-content {
+		padding-left: 20%;
 	}
 
 	.footer-left {
@@ -415,7 +475,7 @@ footer h2 {
 	}
 
 	.name {
-		padding-top: 50px;
+		padding-top: 40%;
 		height: 400px;
 	}
 
@@ -454,16 +514,29 @@ footer h2 {
 	}
 
 	.inner-robo {
+		padding: 5px;
+	}
+
+	.inner-robo {
 		padding: 10px;
 	}
 
+	.inner-robo img {
+		width: 70%;
+	}
+
 	.inner-robo h5 {
-		font-size: 30px
+		font-size: 30px;
 	}
 
 	.inner-robo p {
 		padding: 30px 10px ;
-		font-size: 10px
+		font-size: 10px;
+	}
+
+	.act-content {
+		padding-left: 10%;
+		font-size: 10px;
 	}
 
 	.footer-left {
@@ -478,5 +551,6 @@ footer h2 {
 		width: 300px;
 		height: 300px;
 	}
+
 
 }
