@@ -97,13 +97,30 @@
     		<h5 class="robocuph">robocup2D</h5>
     		<iframe class="youtube" src="https://www.youtube.com/embed/Ptzv9NF9opM?loop=1&playlist=Ptzv9NF9opM&autoplay=1&mute=1&rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<p>
-				RoboCup2Dシミュレーションリーグでは，11人のプレイヤと1人のオンラインコーチから構成されるチームがシミュレーションによってサッカーの試合を行う。各プレイヤそれぞれがそれぞれのプログラムで動く、つまり行動はプレイヤごとのプログラムによって個々で変わる。
+				　RoboCup2Dとは、コンピュータ上に用意された仮想フィールド上でプログラム同士がサッカーの試合を行う競技です。大会が年に数回行われており、開発を手助けするパッケージ類などが多数用意されています。研究では、用意されている2010年の優勝チームが元となったサンプルチームを使っています。
 			</p>
 			<p>
-				研究内容については、プレイヤがパスやシュートを意思決定を行う際のその評価基準を機械学習を用いて、より実践的にまた人間と近い形にもっていくことを検討する。
+				　サンプルチームのプレイヤエージェントは、アクション連鎖探索フレームワークという木探索による協調行動プランニングによって意思決定プロセスを実現しています。このモデルでは、ボールキック時に行動プランを木構造で表現し、探索木を生成することで、次サイクルの行動を決定します。探索木のノードはサッカーフィールドの状態を意味しており、エッジはプレイヤが選択可能な行動候補を表しています。それぞれのノードには状態の評価値が与えられます。プレイヤは最大の評価値を持つ葉ノードまでの行動連鎖を選択し、その行動を実行します。探索木の走査アルゴリズムとしては、最良優先探索が用いられています。以下にアクション連鎖探索の例を示しています。以下の例では、sはボールを持っているプレイヤーを表しています。行動プランを3層目まで作成し、その中で評価値100となった行動を選択し、実行しています。
 			</p>
+            <img src="chain_rei2.png" alt="アクション連鎖探索">
+            <p>
+                　研究については、サンプルチームの強さを向上を図るという目的で行っています。その開発案として、このアクション連鎖探索によって次の行動を決める際の指標となる評価関数を機械学習などを用いて設計しています。標準搭載のものは、ボールと相手ゴールの距離のみを見た単純なものになっています。私は、評価関数の計算処理の部分にファジィ推論法の一種である簡略型推論法を用い、その後件部におけるラベル値を実数値GAを用いて最適化を行いました。また、実数値GAの１個体の評価基準となるfitness関数を決定する際、過去の大会のログファイルを収集し、分析することによりチームの強さの基準となる指標を決定し、fitness関数に適用しました。
+            </p>
+            
     	</div>
     	
+    </div>
+    <div class="container-robo container-act">
+        <h4 id="act-h4">Activities</h4>
+        <div class="act-content">
+            <p>2017/4 : 高知工科大学システム工学群入学</p>
+            <p>2019/10 : Soft Intelligent System on Chip研究室配属</p>
+            <p>2021/2 : 日本知能情報ファジィ学会中国・四国支部大会にて研究発表</p>
+            <p>2021/3 : 日本知能情報ファジィ学会ソフトロボティクス研究部会第18回ポトラック＆ワークショップにて研究発表</p>
+            <p>2021/3 : 高知工科大学システム工学群卒業</p>
+            <p>2020/4 : 高知工科大学大学院入学</p>
+        </div>
+        
     </div>
     <h2 class="hidden">members</h2>
     <div class="members">
@@ -111,29 +128,33 @@
         <ul class="clearfix">
             <li>
                 <h2>Professor</h2>
-                <p>星野　孝総</p>
+                <p><a href="http://www.ele.kochi-tech.ac.jp/hoshino/">星野 孝総</a></p>
+            </li>
+            <li>
+                <h2>OD</h2>
+                <p><a class="text-faded" href="http://www.lab.kochi-tech.ac.jp/future/1110/mitani/home.html">三谷 慶太</a></p>
+            </li>
+            <li>
+                <h2>Dr.</h2>
+                <p>Namal Bandara Rathyanake</p>
+                <p>Trinh Khac Linh</p>
             </li>
             <li>
                 <h2>M2</h2>
-                <p>亀坂　亮紀</p>
-                <p>西山　由華</p>
+                <p><a href="http://www.gs.kochi-tech.ac.jp/245054x/mypage/" class="">楠瀬　翔也</a></p>
+                <p>西　祐希</p>
+                <p><a class="text-faded" href="http://www.gs.kochi-tech.ac.jp/245065k/">橫関　淳祐</a></p>
             </li>
             <li>
                 <h2>M1</h2>
-                <p>楠瀬　翔也</p>
-                <p>西　祐希</p>
-                <p>橫関　淳祐</p>
-            </li>
-            <li>
-                <h2>B4</h2>
-                <p>小池　智哉</p>
-                <p>土肥　直樹</p>
+                <p><a class="text-faded" href="https://naokidohi.github.io/My_page/">土肥　直樹</a></p>
                 <p>吉見　奎吾</p>
             </li>
             <li>
-                <h2>B3</h2>
+                <h2>B4</h2>
                 <p>大川　令二</p>
                 <p>中島　天星</p>
+                <p>橋本　大輔</p>
             </li>
         </ul>
     </div>
